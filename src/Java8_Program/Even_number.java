@@ -8,6 +8,7 @@ public class Even_number {
 
 	public static void main(String[] args) {
 //int[] a= {4,6,8,1,4,3,5,8,10};
+		//Commenting for next check
 List<Integer> evenno=Arrays.asList(4,6,8,1,4,3,5,8,10);
 evenno.stream().filter(n->n%2==0).distinct().sorted(Comparator.naturalOrder()).forEach(System.out::println);
 	}
