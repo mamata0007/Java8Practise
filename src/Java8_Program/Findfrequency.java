@@ -8,8 +8,7 @@ public class Findfrequency {
 
 	public static void main(String[] args) {
 String s="java is a concept of the day";
-Map<Character,Long> results=s.chars()
-.mapToObj(c->(char)c).collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
+Map<Character,Long> results=s.chars().mapToObj(c->(char)c).collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
 System.out.println(results);
 	}
 
